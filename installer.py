@@ -58,10 +58,14 @@ def create_batch_file(directory, python_file):
 
 def main():
     # Directory to save the Python file
-    save_directory = input("Enter the directory to save the Python file:\n")
+    ## save_directory = input("Enter the directory to save the Python file:\n")
+    ## make it desktop by default instead 
+    save_directory = os.path.join(os.path.join(os.environ['USERPROFILE']), 'Desktop') 
     
     # Python file name
-    python_file_name = input("Enter the Python file name (with .py extension):\n")
+    ## python_file_name = input("Enter the Python file name (with .py extension):\n")
+    ## give it default name instead
+    python_file_name = "turbo.py"
 
     # Create Python file
     python_file_path = create_python_file(save_directory, python_file_name)
