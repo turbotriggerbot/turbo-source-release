@@ -33,7 +33,7 @@ def download_text_from_url(url, file_path):
 
 
 
-url = "LINK TO THE RAW OBFUSCATED SOURCE TEXT"
+url = "https://raw.githubusercontent.com/turbotriggerbot/turbo-source-release/main/obfuscated_source.py"
 
 temp_dir = tempfile.gettempdir()
 
